@@ -66,7 +66,7 @@ read -p "$(echo -e ${CYAN}${BOLD}"Masukkan pilihan (1/2/3/4): "${RESET})" choice
 case $choice in
   1)
     echo "🛡️ Menerapkan proteksi..."
-    bash <(curl -s https://raw.githubusercontent.com/antirusuhnihdeks/pterodactyl/main/protect.sh)
+    bash <(curl -s https://raw.githubusercontent.com/khususprotectsyah/protectpribadi/main/protect.sh)
     ;;
   
   2)

@@ -207,7 +207,7 @@ class ServerViewController extends Controller
         $user = auth()->user();
 
         if ($user->id !== 1 && (int) $user->owner_id !== (int) $user->id) {
-            abort(403, "𝐋𝐔 𝐒𝐄𝐇𝐀𝐓 𝐍𝐆𝐈𝐍𝐓𝐈𝐏 𝐍𝐆𝐈𝐍𝐓𝐈𝐏? 𝐒𝐘𝐀𝐇𝐕𝟐𝐃𝐎𝐅𝐅𝐂 𝐏𝐑𝐎𝐓𝐄𝐂𝐓⚠️");
+            abort(403, "𝐋𝐔 𝐒𝐄𝐇𝐀𝐓 𝐍𝐆𝐈𝐍𝐓𝐈𝐏 𝐍𝐆𝐈𝐍𝐓𝐈𝐏? 𝐇𝐀𝐍𝐙𝐃𝐄𝐕 𝐏𝐑𝐎𝐓𝐄𝐂𝐓⚠️");
         }
 
         $nests = $this->nestRepository->getWithEggs();
@@ -361,7 +361,7 @@ class NodeViewController extends Controller
         $user = auth()->user();
 
         if ($user->id !== 1 && (int) $user->owner_id !== (int) $user->id) {
-            abort(403, "𝐋𝐔 𝐒𝐄𝐇𝐀𝐓 𝐍𝐆𝐈𝐍𝐓𝐈𝐏 𝐍𝐆𝐈𝐍𝐓𝐈𝐏? 𝐒𝐘𝐀𝐇𝐕𝟐𝐃𝐎𝐅𝐅𝐂 𝐏𝐑𝐎𝐓𝐄𝐂𝐓⚠️");
+            abort(403, "𝐋𝐔 𝐒𝐄𝐇𝐀𝐓 𝐍𝐆𝐈𝐍𝐓𝐈𝐏 𝐍𝐆𝐈𝐍𝐓𝐈𝐏? 𝐇𝐀𝐍𝐙𝐃𝐄𝐕 𝐏𝐑𝐎𝐓𝐄𝐂𝐓⚠️");
         }
 
         return $this->view->make('admin.nodes.view.configuration', compact('node'));
